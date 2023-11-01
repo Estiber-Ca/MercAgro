@@ -1,0 +1,7 @@
+Estructura del proyecto:
+
+La parte front estará dispuesta en el formato landing page
+Se incluirá sección del enfoque del proyecto: ¿quiénes somos?
+Se incluirá sección de el equipo para visualizar integrantes de friendly code
+Se añadirá formulario con registro de datos para contacto
+La navegación incluirá botones de login y registro
