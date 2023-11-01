@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>MercAgro</title>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">Merc<span>Agro</span></div>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#somos">Quiénes Somos</a></li>
+            <li><a href="#equipo">El Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <!--<li><button id="loginButton">Login</button></li>
+            <li><button id="registroButton">Registro</button></li>-->
+        </ul>
+    </nav>
+
+    <!-- Popup de Login -->
+    <div id="loginPopup" class="popup">
+        <span id="closeLoginPopup" class="close-button">×</span>
+        <h2>Login</h2>
+        <form>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <!-- Popup de Registro -->
+    <div id="registroPopup" class="popup">
+        <span id="closeRegistroPopup" class="close-button">×</span>
+        <h2>Registro</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="usuarioRegistro">Usuario:</label>
+            <input type="text" id="usuarioRegistro" name="usuarioRegistro" required>
+            <label for="contrasenaRegistro">Contraseña:</label>
+            <input type="password" id="contrasenaRegistro" name="contrasenaRegistro" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <section class="cabecera">
+      <h1 class="titulo">La mejor opción para acceder al campo sin complicaciones, es MercAgro</h1>
+    </section>
+    <div class="contenedor">
+      ¿Quiénes somos?
+    </div>
+
+    <!-- Información de cabecera -->
+    <section id="somos">
+        <div class="caja">
+            <img src="img/campo.jpg">
+            <p>Somos un equipo de personas que reconocen el trabajo del campesinado Colombiano.<br>Estamos en comunicación con productores que desean hacer visibles sus productos.</p>
+        </div>
+        <div class="caja">
+            <img src="img/compra.jpg">
+            <p>Relacionamos a los compradores directamente con la fuente productiva para evitar sobrecostos por la tercerización de los procesos.</p>
+        </div>
+        <div class="caja">
+            <img src="img/mercado.jpg">
+            <p>Contamos con acceso a puntos de encuentro en mercados y plazas centrales para el encuentro entre proveedor y comprador.</p>
+        </div>        
+    </section>
+    <div class="contenedor">
+      El equipo MercAgro
+    </div>
+    <!-- El equipo de trabajo -->
+    <section id="equipo">
+        <div class="cajas">
+            <img src="img/perfil.jpg">
+            <p>Daniel Callejas<br>Diseñador front end</p>
+        </div>
+        <div class="cajas">
+            <img src="img/perfil.jpg">
+            <p>Estiber Téllez<br>Diseñador Back end</p>
+        </div>
+        <div class="cajas">
+            <img src="img/perfil.jpg">
+            <p>Daniel Téllez<br>Scrum máster</p>
+        </div>
+        <div class="cajas">
+            <img src="img/perfil.jpg">
+            <p>Estiber Callejas<br>Product owner</p>
+        </div>        
+    </section>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+

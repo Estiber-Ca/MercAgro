@@ -1,0 +1,317 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #556B2F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid;
+    border-color: #D2B48C;
+}
+
+.logo {
+  color: #7CFC00;
+  font-size: 24px;
+}
+
+.logo span{
+  color: #D2B48C;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+/* Efectos hover */
+.nav-links a:hover, 
+.nav-links button:hover {
+  color: #D2B48C; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.popup {
+  color: snow;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/fondo.jpg");
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para los formularios */
+form {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 3px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #556B2F;
+}
+
+form button {
+    background-color: #556B2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cabecera{
+  margin-top: 0px;
+  width: 100%;
+  height: 490px;
+  background-image: url("../img/banner4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+
+}
+
+.titulo{
+  margin-top: 0px;
+  color: snow;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente detrás del título */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.contenedor{
+  text-align: center;
+  padding-top: 20px;
+  height: 50px;
+  color: #D2B48C;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#somos {
+    margin-top: 0px;
+    width: 100%;
+    height: 490px;
+    background-image: url("../img/banner4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+
+#somos .caja{
+    text-align: center;
+    font-family: Dosis;
+    color: var(--gris);
+    margin: 35px;
+    height: 330px;
+    color: snow;
+}
+
+.caja img{
+    width: 330px;
+    height: 250px;
+}
+
+.caja p{
+  padding: 10px;
+  background-color: #556B2F;
+  font-size: 20px;
+}
+
+#equipo  {
+    margin-top: 0px;
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/banner4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+
+#equipo .cajas{
+  padding: 40px;
+    text-align: center;
+    height: 330px;
+    color: snow;
+}
+
+.cajas img{
+  padding-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.cajas p{
+  padding: 10px;
+  margin-left: 30px;
+  background-color: #556B2F;
+  font-size: 20px;
+}
+
+
+
+
+/* Estilos para el menú hamburguesa en vista móvil */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+      z-index: 1;
+      margin-right: 8px;
+      background-color: #556B2F;
+        display: none;
+    }
+
+    .nav-links.show-links {
+      border: 5px solid #D2B48C;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    .nav-links.show-links li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Estilo hover para enlaces y botones en vista móvil */
+    .nav-links.show-links a:hover, .nav-links.show-links button:hover {
+        color: #D2B48C;
+    }
+
+    .nav-links.show-links a {
+        color: snow ;
+        text-decoration: none;
+    }
+
+    form input {
+        width: 70%;
+    }
+
+    .cabecera{
+      width: 100%;
+      background-size: contain;
+      height: 250px;
+    }
+
+    .titulo{
+      font-size: 15px;
+      height: 80px;
+      margin-top: 50px;
+    }
+
+    .contenedor{
+      padding-bottom: -30px;
+    }
+
+    #somos{
+      display: inline-block;
+      padding-top: 0px;
+      width: 100%;
+      height: auto;
+    }
+
+    .caja{
+      float: left;
+      padding-top: 20px;
+    }
+
+    #equipo{
+      display: inline-block;
+      padding-top: 0px;
+      width: 100%;
+      height: auto;
+    }
+
+    .cajas{
+      width: 75%;
+      float: left;
+    }
+
+    .contact-form{
+      width: 80%;
+    }
+
+
+
+
+}
+
+Marrón Tierra: #8B4513
+Verde Oliva: #556B2F
+Amarillo Maíz: #FFD700
+Verde Pasto: #7CFC00
+Marrón Claro: #D2B48C
