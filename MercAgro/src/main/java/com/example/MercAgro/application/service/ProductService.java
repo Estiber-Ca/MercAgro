@@ -5,6 +5,8 @@ import com.example.MercAgro.application.repository.ProductRepository;
 import com.example.MercAgro.domain.Product;
 import com.example.MercAgro.domain.User;
 
+import java.time.LocalDateTime;
+
 
 public class ProductService {
 
@@ -27,7 +29,23 @@ public class ProductService {
     }
 
     public Product saveProduct(Product product){
-        return   productRepository.saveProduct(product);
+        if (product.getId()==null){
+            User user = new User();
+            user.setId(1);
+            product.setDateCreated(LocalDateTime.now());
+            product.setDateUpdated(LocalDateTime.now());
+            product.setUser(user);
+            return   productRepository.saveProduct(product);
+        }else {
+            Product productDB=productRepository.getProductById(product.getId());
+            product.setCode(productDB.getCode());
+            product.setUser(productDB.getUser());
+            product.setDateCreated(productDB.getDateCreated());
+            product.setDateUpdated(LocalDateTime.now());
+            return productRepository.saveProduct(product);
+        }
+
+
     }
 
     public void deleteProductById(Integer id){
